@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+     background-repeat: no-repeat ;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+#template-area {
+    display: grid;
+    grid-template-areas: 
+    " header header header header "
+    " menu main main side "
+    " menu main main side "
+    " menu footer footer footer "
+    ;
+    width: 100vmin;
+    height: 50vmin;
+    margin: auto;
+    margin-top: 25vh;
+}
+#template-area  > div:nth-of-type(1) {
+    background-color: rgb(117, 116, 116);
+    grid-area: header;
+}
+
+#template-area  > div:nth-of-type(2) {
+    background-color: rgb(160, 158, 158);
+    grid-area: menu;
+}
+#template-area  > div:nth-of-type(3) {
+    background-color: rgb(168, 166, 166);
+    grid-area: main;
+}
+#template-area  > div:nth-of-type(4) {
+    background-color: rgb(95, 95, 95);
+    grid-area: side;
+}
+#template-area  > div:nth-of-type(5) {
+    background-color: rgb(63, 63, 63);
+    grid-area: footer;
+}
+ 
